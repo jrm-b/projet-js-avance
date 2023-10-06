@@ -1,6 +1,6 @@
 import { elements } from '../main.js';
 
-export default function displayAllCinemaTable(cinemaList){
+export default function displayAllCinemaTable(cinemaList, element){
 
     let outputHtml = '';
 
@@ -25,9 +25,6 @@ export default function displayAllCinemaTable(cinemaList){
         outputHtml += '</td>';
 
         outputHtml += '</tr>';
-
     });
-
-    elements.containerCinemaList.innerHTML = outputHtml;
-
+    element.innerHTML = outputHtml;
 }
