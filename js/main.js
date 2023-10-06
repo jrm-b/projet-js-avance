@@ -2,6 +2,8 @@ import haversine from './modules/Math.js';
 import { getAllCinema, getCinemaBySeat } from './modules/CallsApi.js';
 import displayAllCinemaTable from './modules/Display.js';
 
+import { getCoords } from './modules/Geolocalisation.js';
+
 export const elements = {
     containerCinemaList: document.querySelector('#container-cinema-list'),
     containerCinemaOrderedList: document.querySelector('#container-cinema-ordered-list')
@@ -19,6 +21,8 @@ export const options = {
 const main = () => {
     getAllCinema();
     getCinemaBySeat();
+
+    getCoords();
 }
 
 main();
