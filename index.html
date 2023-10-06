@@ -11,7 +11,9 @@
 
     <h1>Projet JS avancé - Manipulation d'api</h1>
 
-    <div>
+    <p id="display-localisation"></p>
+
+    <div id="cinameAll">
         <h2>Liste des cinémas</h2>
         <table>
             <thead>
@@ -24,7 +26,9 @@
             </thead>
             <tbody id="container-cinema-list"></tbody>
         </table>
+    </div>
 
+    <div id="cinemaByFauteuils">
         <h2>Liste des cinémas ORDER_BY fauteuils</h2>
         <table>
             <thead>
@@ -36,6 +40,24 @@
                 </tr>
             </thead>
             <tbody id="container-cinema-ordered-list"></tbody>
+        </table>
+    </div>
+
+    <div id="cinemaAndDistance">
+        <h2>Liste des cinémas avec la distance</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Adresse</th>
+                    <th>Commune</th>
+                    <th>Nombre de sièges</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Distance</th>
+                </tr>
+            </thead>
+            <tbody id="container-cinema-coord-list"></tbody>
         </table>
     </div>
 
